@@ -1,4 +1,3 @@
-import os
 import csv
 
 budget_dataCSV = os.path.join('..', 'budget_data.csv')
