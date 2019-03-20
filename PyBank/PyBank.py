@@ -26,13 +26,14 @@ with open(budget_dataCSV, 'r') as budgetdatafile:
         if decrease_profit > diff:
             decrease_profit = diff
             profit_decrease_month = months
+with open("Output.txt", "w") as text_file:
 
     print(f'Financial analysis' + '\n')
     print(f'------------------' + '\n')
     print(f'Total: ${total}')
 
-    print(f'Total months: {months_count}')
-    print(f'Greatest increase in profit: ${increase_profit}, {profit_increase_month}')
-    print(f'Greatest decrease in profit: ${decrease_profit}, {profit_decrease_month}')
+    print(f'Total months: {months_count}', file=text_file)
+    print(f'Greatest increase in profit: ${increase_profit}, {profit_increase_month}', file=text_file)
+    print(f'Greatest decrease in profit: ${decrease_profit}, {profit_decrease_month}', file=text_file)
 
     
