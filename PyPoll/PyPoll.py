@@ -40,18 +40,20 @@ with open (polldata_csv, 'r') as polldatafile:
 	    if value > max_votecount:
 	        max_votecount = value
 	        winner = candidate
+with open("Output.txt", "w") as text_file:
+
 
     
-    print(f'Election results')
-    print(f'------------------')
-    print(f'Total number of votes casted: {voter_total}')
-    print(f'------------------')
-    print(f'Khan: {percentage(Khan_vote_count, voter_total):.3f}%  ({Khan_vote_count})')
-    print(f'Correy: {percentage(Correy_vote_count, voter_total):.3f}%  ({Correy_vote_count})')
-    print(f'Li: {percentage(Li_vote_count, voter_total):.3f}%  ({Li_vote_count})')
-    print(f"O'Tooley: {percentage(Tooley_vote_count, voter_total):.3f}%  ({Tooley_vote_count})")
-    print(f'--------------------------------')
-    print(f'Winner: {winner}')
-    print(f'--------------------------------'+'\n')
+    print(f'Election results', file=text_file)
+    print(f'------------------', file=text_file)
+    print(f'Total number of votes casted: {voter_total}', file=text_file)
+    print(f'------------------', file=text_file)
+    print(f'Khan: {percentage(Khan_vote_count, voter_total):.3f}%  ({Khan_vote_count})', file=text_file)
+    print(f'Correy: {percentage(Correy_vote_count, voter_total):.3f}%  ({Correy_vote_count})', file=text_file)
+    print(f'Li: {percentage(Li_vote_count, voter_total):.3f}%  ({Li_vote_count})', file=text_file)
+    print(f"O'Tooley: {percentage(Tooley_vote_count, voter_total):.3f}%  ({Tooley_vote_count})", file=text_file)
+    print(f'--------------------------------', file=text_file)
+    print(f'Winner: {winner}', file=text_file)
+    print(f'--------------------------------', file=text_file)
 
 

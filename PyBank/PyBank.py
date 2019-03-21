@@ -28,9 +28,9 @@ with open(budget_dataCSV, 'r') as budgetdatafile:
             profit_decrease_month = months
 with open("Output.txt", "w") as text_file:
 
-    print(f'Financial analysis' + '\n')
-    print(f'------------------' + '\n')
-    print(f'Total: ${total}')
+    print(f'Financial analysis', file=text_file)
+    print(f'------------------', file=text_file)
+    print(f'Total: ${total}', file=text_file)
 
     print(f'Total months: {months_count}', file=text_file)
     print(f'Greatest increase in profit: ${increase_profit}, {profit_increase_month}', file=text_file)

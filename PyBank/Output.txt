@@ -1,3 +1,6 @@
+Financial analysis
+------------------
+Total: $38382578
 Total months: 86
 Greatest increase in profit: $1170593, Feb-2012
 Greatest decrease in profit: $-1196225, Sep-2013
